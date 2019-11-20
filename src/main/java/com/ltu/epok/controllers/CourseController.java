@@ -40,6 +40,7 @@ public class CourseController {
         return courseRepository.findByCourseCode(courseCode);
     }
 
+    //The main controller method for this Rest-Service
     //TODO Modify to not return null but instead a 404
     @GetMapping("/epok_courses/bycode/{courseCode}/{semester}")
     public String getSignupCode(
